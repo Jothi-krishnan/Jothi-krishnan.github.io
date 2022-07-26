@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <script>
+        function rain(){
+            let amount = 100;
+            let body = document.querySelector('body');
+            let i = 0;
+            while(i<amount){
+                let drop = document.createElement('i');
+
+                let size = Math.random() * 5;
+                let posX = Math.floor(Math.random()* window.innerWidth);
+                let delay = Math.random() - 20;
+                let duration = Math.random() * 5;
+
+                drop.style.width =  0.2 + size + 'px';
+                drop.style.left = posX + 'px';
+                drop.style.animationDelay = delay + 's';
+                drop.style.animationDuration = duration + 's';
+
+                body.appendChild(drop);
+                i++;
+            }
+        }
+
+        rain();
+    </script>
+    <div class="header">
+        <div class="text-container">
+            <h1>Hello, I'm <span>Jothi Krishnan M</span>, a 3rd Year student at IIT Roorkee and also a Full Stack Web Developer.</h1>
+            <a href="#AboutMe">Know more About Me</a>
+        </div>
+    </div>
+    <div class="heading">
+        <h1>ABOUT ME</h1>
+        <div class="box"></div>
+    </div>
+    <div class="about" id="AboutMe">
+        <div class="About-container">
+            <div class="image-container">
+                <img src="./images/IMG_20220408_224331.jpg" alt="Handsome_Jothi_Krishnan_Profile_Pic">
+            </div>
+            <div class="about-me">
+                <h2>Who is this guy?</h2>
+                <h3>I am currently a student in IIT Roorkee. I am an aspiring Software Developer and a Full Stack Developer. 
+                    I have a serious passion on Software and Web Development.</h3>
+                <a class="connect" href="www.google.com">Let's connect to make something Epic!!!</a>
+    
+            </div>
+        </div>
+        <div class="skill-container">
+            <div class="skills">
+            <div class="skill">
+                <div class="skill-name">HTML</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="90%" style="max-width:90%"></div>
+                </div>
+            </div>
+
+           <div class="skill">
+                <div class="skill-name">CSS</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="80%" style="max-width:80%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Javascript</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="80%" style="max-width:80%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">React Js</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="60%" style="max-width:60%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Node Js</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="50%" style="max-width:50%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">C++</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="95%" style="max-width:95%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Python</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="90%" style="max-width:90%"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
